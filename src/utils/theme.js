@@ -13,7 +13,7 @@ export const light = extendTheme({
       a: {
         color: "#787878",
         _hover: {
-          color: "#82d20f",
+          color: "#ffe607",
         },
       },
     },

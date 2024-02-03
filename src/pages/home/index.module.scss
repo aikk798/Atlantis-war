@@ -28,6 +28,7 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
+    color: #fff;
   }
   .banner {
     text-align: center;
@@ -65,13 +66,15 @@
     width: 80% !important;
     margin: 0 auto;
   }
-  .trait {
+  .traitWrap {
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
     padding: 16px;
     background-color: #ffe607;
+  }
+  .trait {
     color: #16141c;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

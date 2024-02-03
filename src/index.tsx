@@ -5,10 +5,7 @@ import { light } from "@/utils/theme";
 
 import { Provider } from "react-redux";
 import store from "@/utils/store";
-import {
-  RainbowKitProvider,
-  connectorsForWallets,
-} from "@rainbow-me/rainbowkit";
+import { RainbowKitProvider, connectorsForWallets } from "@rainbow-me/rainbowkit";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { mainnet, goerli } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
@@ -21,8 +18,11 @@ import {
 import "@rainbow-me/rainbowkit/styles.css";
 import { ApolloProvider } from "@apollo/client";
 import apolloClient from "@/utils/apollo-client";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import "./app.less";
+import { useEffect } from "react";
 
 const _chains =
   process.env.NODE_ENV === "development"
@@ -52,6 +52,12 @@ const wagmiClient = createClient({
 });
 
 function App(): JSX.Element {
+  useEffect(() => {
+    AOS.init({
+      duration: 400,
+    });
+  }, []);
+
   return (
     <Provider store={store}>
       <WagmiConfig client={wagmiClient}>

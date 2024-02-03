@@ -12,6 +12,7 @@
     "@reduxjs/toolkit": "^1.9.5",
     "@tanstack/react-table": "^8.5.13",
     "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "axios": "^0.27.2",
     "bignumber.js": "^9.1.0",
     "buffer": "^6.0.3",
@@ -79,6 +80,7 @@
     ]
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/lodash-es": "^4.17.7",
     "@types/react": "^18.2.12",
     "@types/react-dom": "^18.2.4",

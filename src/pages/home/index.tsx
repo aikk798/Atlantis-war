@@ -32,25 +32,35 @@ export default function Home() {
           <a>DOC</a>
         </div>
       </header>
+
       <section>
-        <div className={styles.banner}>
-          <div className={styles.build}>
-            Build on
-            <img src={Blast} width={140} />
+        <div data-aos="fade-up">
+          <div className={styles.banner}>
+            <div className={styles.build}>
+              Build on
+              <img src={Blast} width={140} />
+            </div>
+            <div className={styles.slogen}>EXPLORE ATLANTIS AND UNCOVER NEW GAMING ADVENTURES</div>
+            <div className={styles.des}>
+              In The Rich And Mysterious Land Of The Kingdom Of Atlantis, There Lies Both Danger And
+              Opportunity; Warriors, Master Your Skills And Seize Fortune!
+            </div>
+            <Button className={styles.button}>Coming Soon</Button>
           </div>
-          <div className={styles.slogen}>EXPLORE ATLANTIS AND UNCOVER NEW GAMING ADVENTURES</div>
-          <div className={styles.des}>
-            In The Rich And Mysterious Land Of The Kingdom Of Atlantis, There Lies Both Danger And
-            Opportunity; Warriors, Master Your Skills And Seize Fortune!
-          </div>
-          <Button className={styles.button}>Coming Soon</Button>
         </div>
-        <img className={styles.hill} src={Hill} />
+        <div data-aos="fade-up">
+          <img className={styles.hill} src={Hill} />
+        </div>
       </section>
-      <div className={styles.trait}>
-        <div>FREE TO EARN</div>
-        <div>ASSETS OF YOUR OWN</div>
-        <div>BOOST USER YIELDS</div>
+
+      <div data-aos="fade-up">
+        <div className={styles.traitWrap}>
+          <div className={styles.trait}>
+            <div>FREE TO EARN</div>
+            <div>ASSETS OF YOUR OWN</div>
+            <div>BOOST USER YIELDS</div>
+          </div>
+        </div>
       </div>
     </div>
   );
