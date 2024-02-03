@@ -26,7 +26,7 @@ const RootRouter = () => {
     <Router>
       <Layout />
       <Switch>
-        <Route exact path="/" render={() => <Redirect to="/trove" />} />
+        <Route exact path="/" render={() => <Redirect to="/home" />} />
         {routers.map((route: RouteObject) => {
           return (
             <Route

@@ -26,7 +26,9 @@ export default function Home() {
           <img src={Logo} width={240} />
         </div>
         <div className="flex justify-end" style={{ gap: 64 }}>
-          <a>Twitter</a>
+          <a href="https://twitter.com/Atlantis_war" target="_blank">
+            Twitter
+          </a>
           <a>DOC</a>
         </div>
       </header>
