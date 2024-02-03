@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #82d20f;
+  --primary-color: #ffe607;
   --font-Ubuntu-Bold: "Ubuntu-Bold";
   --font-Ubuntu-Medium: "Ubuntu-Medium";
   --primary-card-bg: #fff;
@@ -11,23 +11,25 @@
 
 @font-face {
   font-family: "Ubuntu-Bold";
-  src: url("../public/font/Ubuntu-Bold.ttf") format("truetype");
+  src: url("../public/font/PressStart2P-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Ubuntu-Medium";
-  src: url("../public/font/Ubuntu-Medium.ttf") format("truetype");
+  src: url("../public/font/PressStart2P-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Ubuntu";
-  src: url("../public/font/Ubuntu-Regular.ttf") format("truetype");
+  src: url("../public/font/PressStart2P-Regular.ttf") format("truetype");
 }
 
 body {
   height: calc(100vh - 80px);
   overflow-y: auto;
   -webkit-font-smoothing: antialiased;
+  color: fff;
+  font-size: 14px;
 }
 
 .color-primary {
@@ -47,7 +49,7 @@ button:hover {
 }
 
 .button-primary {
-  color: #fff !important;
+  color: #000 !important;
   background-color: var(--primary-color) !important;
   &:disabled {
     background: #d2d3da !important;
@@ -57,7 +59,7 @@ button:hover {
 }
 
 .button-primary-1 {
-  color: #fff !important;
+  color: #000 !important;
   background-color: #c0ea83 !important;
   &:disabled {
     background: #d2d3da !important;
@@ -229,7 +231,6 @@ button:hover {
 
 .page-wrapper {
   position: relative;
-  margin-top: 64px;
   min-height: calc(100vh - 64px);
   overflow-y: auto;
   width: 100%;
@@ -270,22 +271,6 @@ ul {
 
 strong {
   color: #3b454e;
-}
-
-.lp_info {
-  .lp_bg {
-    background: #ffffff;
-    border-radius: 24px;
-    padding: 8px 16px 8px 6px;
-  }
-  input {
-    border-radius: 8px;
-    font-size: 20px;
-    height: 50px;
-    &:focus-visible {
-      border: 1px solid rgba(255, 255, 255, 0.3);
-    }
-  }
 }
 
 .toast-message {

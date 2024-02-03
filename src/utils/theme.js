@@ -10,10 +10,6 @@ export const light = extendTheme({
   },
   styles: {
     global: {
-      body: {
-        bg: "#fafafa",
-        color: "#787878",
-      },
       a: {
         color: "#787878",
         _hover: {

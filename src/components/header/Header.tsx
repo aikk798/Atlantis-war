@@ -10,7 +10,6 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import classnames from "classnames";
-import { CustomConnectButton } from "@/components/custom-connect-button";
 import { LogoMini } from "@/components/img-icons";
 
 export interface IHeader {
@@ -26,9 +25,7 @@ const Header: React.FC<IHeader> = () => {
       <div className={styles.main}>
         <div className="flex items-center justify-between">{isH5 && <LogoMini width="32" />}</div>
         <div className="flex items-center">
-          <div className="flex items-center gap-2">
-            <CustomConnectButton isH5={isH5} />
-          </div>
+          <div className="flex items-center gap-2">11</div>
           <div className={styles.burger_wrapper} onClick={onToggle}>
             <div className={classnames(styles.burger, isOpen ? styles.burger_active : "")}></div>
           </div>
