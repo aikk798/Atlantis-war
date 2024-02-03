@@ -1,0 +1,40 @@
+.account_arrow {
+  transform: rotate(-90deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.account_arrow_active {
+  transform: rotate(90deg);
+}
+
+.account_wrap {
+  background: rgba(130, 210, 15, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 14px;
+  border-radius: 50px;
+  .btn {
+    padding-left: 8px;
+    padding-right: 6px;
+    background: #82d20f;
+    font-size: 14px;
+    border-radius: 50px;
+    color: #fff;
+  }
+}
+
+.chainIconWrap {
+  background: #e2e2e2;
+  border-radius: 14px 14px 14px 14px;
+  padding: 2px;
+  color: #212121;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1000px) {
+  .balance {
+    display: none;
+  }
+}

@@ -1,0 +1,34 @@
+.component {
+  width: 100%;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .headerContent {
+      flex: 1;
+    }
+    .arrow {
+      transform-style: preserve-3d;
+      transition: transform 0.2s linear;
+      cursor: pointer;
+    }
+    .arrow_show {
+      transform: translateZ(0) scaleX(1) rotateX(0deg) rotateY(0deg)
+        rotate(90deg) skew(0deg, 0deg);
+    }
+    .arrow_hidden {
+      transform: translateZ(0) scaleX(1) rotateX(0deg) rotateY(0deg)
+        rotate(0deg) skew(0deg, 0deg);
+    }
+  }
+
+  .body {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .body_open {
+    max-height: none !important;
+  }
+}
