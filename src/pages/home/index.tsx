@@ -25,11 +25,10 @@ export default function Home() {
         <div className="flex justify-center">
           <img src={Logo} width={240} />
         </div>
-        <div className="flex justify-end" style={{ gap: 64 }}>
+        <div className={styles.medumWrap}>
           <a href="https://twitter.com/Atlantis_war" target="_blank">
             Twitter
           </a>
-          <a>DOC</a>
         </div>
       </header>
 
@@ -53,13 +52,11 @@ export default function Home() {
         </div>
       </section>
 
-      <div data-aos="fade-up">
-        <div className={styles.traitWrap}>
-          <div className={styles.trait}>
-            <div>FREE TO EARN</div>
-            <div>ASSETS OF YOUR OWN</div>
-            <div>BOOST USER YIELDS</div>
-          </div>
+      <div className={styles.traitWrap}>
+        <div className={styles.trait}>
+          <div>FREE TO EARN</div>
+          <div>ASSETS OF YOUR OWN</div>
+          <div>BOOST USER YIELDS</div>
         </div>
       </div>
     </div>
