@@ -39,6 +39,8 @@ export default function Home() {
                 </div>
                 <div className={styles.right}>
                   <img src={Banner} width={550} />
+                  <div className={styles.bg1} />
+                  <div className={styles.bg2} />
                 </div>
               </div>
             </div>
