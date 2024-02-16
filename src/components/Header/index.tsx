@@ -5,6 +5,7 @@ import classNames from "classnames";
 import { MEDIAS_SRC, IMG_SRC } from "@/utils/constant";
 import { MdOutlineMenu } from "react-icons/md";
 import { Button } from "@chakra-ui/react";
+import { errorToast } from "@/utils/toast";
 
 function scrollToElement(id: string) {
   const targetElement = document.getElementById(`#${id}`);
@@ -64,7 +65,14 @@ export default function Header() {
             {/* <a href={MEDIAS_SRC.twitter} target="_blank">
               <img src={IMG_SRC.Twitter} alt="Twitter" width="20" height={22} />
             </a> */}
-            <Button className={styles.btn}>TESTNET SOON</Button>
+            <Button
+              className={styles.btn}
+              onClick={() => {
+                errorToast("coming soon");
+              }}
+            >
+              TESTNET SOON
+            </Button>
           </div>
         </div>
       </div>

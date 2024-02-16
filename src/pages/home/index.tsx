@@ -7,6 +7,7 @@ import Cloud from "@/assets/cloud.png";
 import Banner from "@/assets/banner.png";
 import Launch from "@/assets/launch.png";
 import Footer from "@/components/footer/Footer";
+import { errorToast } from "@/utils/toast";
 
 export default function Home() {
   return (
@@ -29,9 +30,14 @@ export default function Home() {
                     On The Mysterious Land Of Atlantis, Master Your Skills And Game With Friends.
                   </div>
                   <div className={styles.buttonGroup}>
-                    <a href="" target="_blank">
-                      <Button className={classNames(styles.btn, styles.btn_1)}>TESTNET SOON</Button>
-                    </a>
+                    <Button
+                      className={classNames(styles.btn, styles.btn_1)}
+                      onClick={() => {
+                        errorToast("coming soon");
+                      }}
+                    >
+                      TESTNET SOON
+                    </Button>
                     <a href="https://twitter.com/Atlantis_war" target="_blank">
                       <Button className={classNames(styles.btn, styles.btn_2)}>FOLLOW US</Button>
                     </a>
