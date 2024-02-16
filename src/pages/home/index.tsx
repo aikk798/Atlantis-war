@@ -1,64 +1,89 @@
 import styles from "./index.module.scss";
-
 import { Button } from "@chakra-ui/react";
-import Logo from "@/assets/img/logo.png";
-import Blast from "@/assets/img/blast.png";
-import Hill from "@/assets/img/hill.png";
-import LogoMini from "@/assets/img/logo_mini.png";
-import Cloud1 from "@/assets/img/cloud.png";
-import Cloud2 from "@/assets/img/cloud2.png";
-import cloud3 from "@/assets/img/cloud3.png";
-import Cloud4 from "@/assets/img/cloud.png";
+import Header from "@/components/Header";
 import classNames from "classnames";
+import Blast from "@/assets/blast.png";
+import Cloud from "@/assets/cloud.png";
+import Banner from "@/assets/banner.png";
+import Launch from "@/assets/launch.png";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <img src={Cloud1} width={200} className={classNames(styles.Cloud, styles.Cloud1)} />
-      <img src={Cloud2} width={160} className={classNames(styles.Cloud, styles.Cloud2)} />
-      <img src={cloud3} width={200} className={classNames(styles.Cloud, styles.Cloud3)} />
-      <img src={Cloud4} width={140} className={classNames(styles.Cloud, styles.Cloud4)} />
-      <header className={styles.header}>
-        <div className="flex" style={{ gap: 64 }}>
-          <img src={LogoMini} width={50} />
-        </div>
-        <div className="flex justify-center">
-          <img src={Logo} width={240} />
-        </div>
-        <div className={styles.medumWrap}>
-          <a href="https://twitter.com/Atlantis_war" target="_blank">
-            Twitter
-          </a>
-        </div>
-      </header>
-
-      <section>
-        <div data-aos="fade-up">
-          <div className={styles.banner}>
-            <div className={styles.build}>
-              Build on
-              <img src={Blast} width={140} />
+      <Header />
+      <div className={styles.section_banner}>
+        <div className={styles.section_content}>
+          <div className="page-content">
+            <div data-aos="fade-up">
+              <div className={styles.contentBox}>
+                <div className={styles.left}>
+                  <div className={styles.build}>
+                    Build on
+                    <img src={Blast} width={153} />
+                  </div>
+                  <div className={styles.slogen}>
+                    EXPLORE ATLANTIS AND UNCOVER NEW GAMING ADVENTURES
+                  </div>
+                  <div className={styles.des}>
+                    On The Mysterious Land Of Atlantis, Master Your Skills And Game With Friends.
+                  </div>
+                  <div className={styles.buttonGroup}>
+                    <a href="" target="_blank">
+                      <Button className={classNames(styles.btn, styles.btn_1)}>TESTNET SOON</Button>
+                    </a>
+                    <a href="https://twitter.com/Atlantis_war" target="_blank">
+                      <Button className={classNames(styles.btn, styles.btn_2)}>FOLLOW US</Button>
+                    </a>
+                  </div>
+                </div>
+                <div className={styles.right}>
+                  <img src={Banner} width={550} />
+                </div>
+              </div>
             </div>
-            <div className={styles.slogen}>EXPLORE ATLANTIS AND UNCOVER NEW GAMING ADVENTURES</div>
-            <div className={styles.des}>
-              In The Rich And Mysterious Land Of The Kingdom Of Atlantis, There Lies Both Danger And
-              Opportunity; Warriors, Master Your Skills And Seize Fortune!
-            </div>
-            <Button className={styles.button}>Coming Soon</Button>
           </div>
         </div>
-        <div data-aos="fade-up">
-          <img className={styles.hill} src={Hill} />
+      </div>
+      <img src={Cloud} height={75} style={{ position: "relative", top: 2 }} />
+      <div className={styles.desContent}>
+        <div className={styles.titleWrap}>
+          <div className={styles.title}>FREE MINT AND UPGRADE YOUR SBT & GOT SHARES</div>
+          <div className={styles.des}>
+            In the world of Atlantis, you can Free Mint your exclusive game character and upgrade
+            the character level of your SBT. In this mysterious world, you can also socialize with
+            friends and share the wealth of Atlantis. Would you like to join?
+          </div>
         </div>
-      </section>
-
-      <div className={styles.traitWrap}>
-        <div className={styles.trait}>
-          <div>FREE TO EARN</div>
-          <div>ASSETS OF YOUR OWN</div>
-          <div>BOOST USER YIELDS</div>
+        <div className={styles.lunachWrap}>
+          <img src={Launch} />
+          <div className={styles.right}>
+            <div className={styles.title}>
+              ATLANTIS <span className={styles.black}> LAUNCH CALENDAR</span>
+            </div>
+            <ul>
+              <li>
+                <span className={styles.black}>Dev(February):</span> We have completed the initial
+                UI/UX design and contract code. We expect to release Testnet V1 in two weeks.
+              </li>
+              <li>
+                <span className={styles.black}>Testnet(March):</span> We will further optimize the
+                product during the test phase, build with the community.
+              </li>
+              <li>
+                <span className={styles.black}>Airdrop(March):</span> We will airdrop to users of
+                Pixel, Frenpet, Sunfollower, Blast Bridge, giving them the opportunity to access our
+                game for free.
+              </li>
+              <li>
+                <span className={styles.black}>Mainnet (March):</span> We have completed the initial
+                UI/UX design and contract code. We expect to release Testnet V1 in two weeks.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

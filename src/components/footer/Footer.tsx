@@ -8,7 +8,12 @@ const Footer: React.FC<IFooter> = () => {
     <div className={styles.component}>
       <div className={styles.content}>
         <div className="flex items-center justify-center ">
-          © 2023 by indollar.finance. All right reserved.
+          © 2024 Atlantis War. All rights reserved.
+        </div>
+        <div className="flex items-center justify-center ">
+          <a href="https://twitter.com/Atlantis_war" target="_blank">
+            Twitter
+          </a>
         </div>
       </div>
     </div>

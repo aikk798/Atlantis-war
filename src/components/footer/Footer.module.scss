@@ -1,7 +1,19 @@
 .component {
   width: 100%;
+  background-color: #fff;
+  color: #7a7a7a;
+  border-top: 1px solid #e7e7e7;
 }
 .content {
   margin: 0 auto;
-  padding: 16px 0;
+  padding: 16px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+  .content {
+    padding: 16px;
+  }
 }

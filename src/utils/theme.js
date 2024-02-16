@@ -19,7 +19,7 @@ export const light = extendTheme({
     },
   },
   fonts: {
-    body: "Ubuntu",
+    body: "",
   },
   colors: {
     fontColor: {
