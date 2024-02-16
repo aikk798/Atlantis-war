@@ -83,7 +83,7 @@
           position: absolute;
           background-size: 600% 800%;
           background-image: url("../../assets/solder.png");
-          animation: sprite-2d-x 4s steps(6, end) infinite, sprite-2d-y 12s steps(8, end) infinite;
+          animation: sprite-2d-x 2s steps(6, end) infinite, sprite-2d-y 2s steps(8, end) infinite;
           overflow: hidden;
         }
       }
