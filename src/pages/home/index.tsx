@@ -41,6 +41,8 @@ export default function Home() {
                   <img src={Banner} width={550} />
                   <div className={styles.bg1} />
                   <div className={styles.bg2} />
+                  <div className={styles.cloud1} />
+                  <div className={styles.cloud2} />
                 </div>
               </div>
             </div>
@@ -65,21 +67,20 @@ export default function Home() {
             </div>
             <ul>
               <li>
-                <span className={styles.black}>Dev(February):</span> We have completed the initial
-                UI/UX design and contract code. We expect to release Testnet V1 in two weeks.
+                <span className={styles.black}>Dev (End of February):</span> Initial UI/UX design
+                and contract code completed. Testnet V1 release expected in two weeks.
               </li>
               <li>
-                <span className={styles.black}>Testnet(March):</span> We will further optimize the
-                product during the test phase, build with the community.
+                <span className={styles.black}>Testnet (Early March):</span> Further product
+                optimization during testing phase, in collaboration with the community.
               </li>
               <li>
-                <span className={styles.black}>Airdrop(March):</span> We will airdrop to users of
-                Pixel, Frenpet, Sunfollower, Blast Bridge, giving them the opportunity to access our
-                game for free.
+                <span className={styles.black}>Airdrop (Mid March): </span>Airdrop to users of
+                Pixel, Frenpet, Sunfollower, Blast Bridge, granting free access to our game.
               </li>
               <li>
-                <span className={styles.black}>Mainnet (March):</span> We have completed the initial
-                UI/UX design and contract code. We expect to release Testnet V1 in two weeks.
+                <span className={styles.black}>Mainnet (End of March):</span> Mainnet launch on
+                Blast.
               </li>
             </ul>
           </div>

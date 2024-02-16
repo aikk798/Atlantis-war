@@ -86,6 +86,26 @@
           animation: sprite-2d-x 2s steps(6, end) infinite, sprite-2d-y 2s steps(8, end) infinite;
           overflow: hidden;
         }
+        .cloud1 {
+          position: absolute;
+          top: 4%;
+          right: 4%;
+          width: 161px;
+          height: 53px;
+          background-image: url("../../assets/cloud_b.png");
+          background-size: 100% 100%;
+          animation: cloud-x-1 5s linear infinite;
+        }
+        .cloud2 {
+          position: absolute;
+          top: 20%;
+          left: 4%;
+          width: 120px;
+          height: 48px;
+          background-image: url("../../assets/cloud_b.png");
+          background-size: 100% 100%;
+          animation: cloud-x-2 10s linear infinite;
+        }
       }
     }
   }
@@ -286,5 +306,33 @@
 
   to {
     background-position-y: -800%;
+  }
+}
+
+@keyframes cloud-x-1 {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(8px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes cloud-x-2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(4px);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }
